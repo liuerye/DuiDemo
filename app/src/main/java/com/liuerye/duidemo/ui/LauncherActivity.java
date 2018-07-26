@@ -1,4 +1,4 @@
-package demo.ui;
+package com.liuerye.duidemo.ui;
 
 import android.app.Activity;
 import android.content.BroadcastReceiver;
@@ -12,9 +12,9 @@ import android.text.TextUtils;
 
 import com.aispeech.ailog.AILog;
 import com.aispeech.dui.dds.DDS;
-import com.aispeech.dui.dds.demo.DDSService;
-import com.aispeech.dui.dds.demo.R;
 import com.aispeech.dui.dds.exceptions.DDSNotInitCompleteException;
+import com.liuerye.duidemo.DDSService;
+import com.liuerye.duidemo.R;
 
 public class LauncherActivity extends Activity {
 

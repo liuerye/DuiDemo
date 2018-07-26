@@ -1,4 +1,4 @@
-package demo.bean;
+package com.liuerye.duidemo.bean;
 
 import java.util.ArrayList;
 

@@ -1,4 +1,4 @@
-package demo.observer;
+package com.liuerye.duidemo.observer;
 
 import android.content.Context;
 

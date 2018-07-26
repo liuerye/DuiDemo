@@ -1,4 +1,4 @@
-package demo.widget.avatar;
+package com.liuerye.duidemo.widget.avatar;
 
 
 /**

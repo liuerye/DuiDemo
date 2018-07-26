@@ -1,4 +1,4 @@
-package demo.widget.pageview.adapter;
+package com.liuerye.duidemo.widget.pageview.adapter;
 
 import android.support.annotation.IntDef;
 

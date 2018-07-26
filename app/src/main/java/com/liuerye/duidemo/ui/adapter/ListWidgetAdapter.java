@@ -1,4 +1,4 @@
-package demo.ui.adapter;
+package com.liuerye.duidemo.ui.adapter;
 
 import android.content.Context;
 import android.support.annotation.LayoutRes;
@@ -8,10 +8,10 @@ import android.widget.TextView;
 
 import com.aispeech.ailog.AILog;
 import com.aispeech.dui.dds.DDS;
-import com.aispeech.dui.dds.demo.R;
-import com.aispeech.dui.dds.demo.bean.MessageBean;
-import com.aispeech.dui.dds.demo.widget.pageview.adapter.BasePageAdapter;
-import com.aispeech.dui.dds.demo.widget.pageview.adapter.OnPageDataListener;
+import com.liuerye.duidemo.R;
+import com.liuerye.duidemo.bean.MessageBean;
+import com.liuerye.duidemo.widget.pageview.adapter.BasePageAdapter;
+import com.liuerye.duidemo.widget.pageview.adapter.OnPageDataListener;
 
 
 public class ListWidgetAdapter extends BasePageAdapter<MessageBean, ListWidgetAdapter.MainHolder> {

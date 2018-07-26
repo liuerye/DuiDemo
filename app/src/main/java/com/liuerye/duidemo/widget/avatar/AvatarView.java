@@ -1,4 +1,4 @@
-package demo.widget.avatar;
+package com.liuerye.duidemo.widget.avatar;
 
 import android.animation.Animator;
 import android.content.Context;
@@ -10,7 +10,7 @@ import com.airbnb.lottie.LottieAnimationView;
 import com.airbnb.lottie.LottieComposition;
 import com.airbnb.lottie.OnCompositionLoadedListener;
 import com.aispeech.ailog.AILog;
-import com.aispeech.dui.dds.demo.util.AssetUtils;
+import com.liuerye.duidemo.util.AssetUtils;
 
 import org.androidannotations.annotations.Background;
 import org.androidannotations.annotations.EView;

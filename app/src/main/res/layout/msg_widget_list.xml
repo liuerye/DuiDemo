@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content">
 
-    <com.aispeech.dui.dds.demo.widget.pageview.view.PageView
+    <com.liuerye.duidemo.widget.pageview.view.PageView
         android:id="@+id/pageView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

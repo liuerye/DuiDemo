@@ -1,4 +1,4 @@
-package demo.widget;
+package com.liuerye.duidemo.widget;
 
 
 import android.content.Context;
@@ -7,9 +7,9 @@ import android.view.View;
 import android.widget.RelativeLayout;
 
 import com.aispeech.ailog.AILog;
-import com.aispeech.dui.dds.demo.R;
-import com.aispeech.dui.dds.demo.widget.avatar.AvatarView;
-import com.aispeech.dui.dds.demo.widget.avatar.IAvatarEvent;
+import com.liuerye.duidemo.R;
+import com.liuerye.duidemo.widget.avatar.AvatarView;
+import com.liuerye.duidemo.widget.avatar.IAvatarEvent;
 
 import org.androidannotations.annotations.AfterViews;
 import org.androidannotations.annotations.Background;

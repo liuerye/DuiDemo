@@ -1,4 +1,4 @@
-package demo;
+package com.liuerye.duidemo;
 
 import android.app.Service;
 import android.content.Intent;
@@ -14,9 +14,9 @@ import com.aispeech.dui.dds.DDSAuthListener;
 import com.aispeech.dui.dds.DDSConfig;
 import com.aispeech.dui.dds.DDSInitListener;
 import com.aispeech.dui.dds.auth.AuthType;
-import com.aispeech.dui.dds.demo.observer.DuiCommandObserver;
-import com.aispeech.dui.dds.demo.observer.DuiNativeApiObserver;
 import com.aispeech.dui.dds.exceptions.DDSNotInitCompleteException;
+import com.liuerye.duidemo.observer.DuiCommandObserver;
+import com.liuerye.duidemo.observer.DuiNativeApiObserver;
 
 /*
 *

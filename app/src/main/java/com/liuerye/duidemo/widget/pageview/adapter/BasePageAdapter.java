@@ -1,4 +1,4 @@
-package demo.widget.pageview.adapter;
+package com.liuerye.duidemo.widget.pageview.adapter;
 
 import android.content.Context;
 import android.support.v7.widget.RecyclerView;
@@ -10,9 +10,9 @@ import android.view.ViewGroup;
 import java.util.ArrayList;
 import java.util.List;
 
-import static com.aispeech.dui.dds.demo.widget.pageview.utils.PosUtil.adjustPosition22;
-import static com.aispeech.dui.dds.demo.widget.pageview.utils.PosUtil.adjustPosition23;
-import static com.aispeech.dui.dds.demo.widget.pageview.utils.PosUtil.adjustPosition24;
+import static com.liuerye.duidemo.widget.pageview.utils.PosUtil.adjustPosition22;
+import static com.liuerye.duidemo.widget.pageview.utils.PosUtil.adjustPosition23;
+import static com.liuerye.duidemo.widget.pageview.utils.PosUtil.adjustPosition24;
 
 public abstract class BasePageAdapter<T, ViewHolder extends RecyclerView.ViewHolder> extends RecyclerView.Adapter<ViewHolder> implements OnPageDataListener<T> {
 	private static final String TAG = "BasePageAdapter";

@@ -1,4 +1,4 @@
-package demo.widget.pageview.view;
+package com.liuerye.duidemo.widget.pageview.view;
 
 import android.os.Handler;
 import android.os.Message;

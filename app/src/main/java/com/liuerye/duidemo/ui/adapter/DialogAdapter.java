@@ -1,4 +1,4 @@
-package demo.ui.adapter;
+package com.liuerye.duidemo.ui.adapter;
 
 import android.net.Uri;
 import android.support.v7.widget.RecyclerView;
@@ -12,16 +12,17 @@ import android.widget.TextView;
 
 import com.aispeech.ailog.AILog;
 import com.aispeech.dui.dds.DDS;
-import com.aispeech.dui.dds.demo.R;
-import com.aispeech.dui.dds.demo.bean.MessageBean;
-import com.aispeech.dui.dds.demo.widget.pageview.view.PageRecyclerView;
-import com.aispeech.dui.dds.demo.widget.pageview.view.PageView;
 import com.facebook.drawee.view.SimpleDraweeView;
+import com.liuerye.duidemo.R;
+import com.liuerye.duidemo.bean.MessageBean;
+import com.liuerye.duidemo.widget.pageview.view.PageRecyclerView;
+import com.liuerye.duidemo.widget.pageview.view.PageView;
 
 import java.util.ArrayList;
 import java.util.List;
 
-import static com.aispeech.dui.dds.demo.DuiApplication.getContext;
+import static com.liuerye.duidemo.DuiApplication.getContext;
+
 
 public class DialogAdapter extends RecyclerView.Adapter {
 

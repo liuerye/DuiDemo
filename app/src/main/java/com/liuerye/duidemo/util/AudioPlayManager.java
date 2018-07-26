@@ -1,4 +1,4 @@
-package demo.util;
+package com.liuerye.duidemo.util;
 
 import android.app.Activity;
 import android.content.Context;

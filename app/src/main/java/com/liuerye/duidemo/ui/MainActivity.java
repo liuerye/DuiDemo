@@ -1,4 +1,4 @@
-package demo.ui;
+package com.liuerye.duidemo.ui;
 
 import android.app.Dialog;
 import android.app.ProgressDialog;
@@ -26,14 +26,14 @@ import com.aispeech.dui.BusClient;
 import com.aispeech.dui.dds.DDS;
 import com.aispeech.dui.dds.DDSConfig;
 import com.aispeech.dui.dds.agent.MessageObserver;
-import com.aispeech.dui.dds.demo.DDSService;
-import com.aispeech.dui.dds.demo.R;
-import com.aispeech.dui.dds.demo.bean.MessageBean;
-import com.aispeech.dui.dds.demo.ui.adapter.DialogAdapter;
-import com.aispeech.dui.dds.demo.widget.InputField;
 import com.aispeech.dui.dds.exceptions.DDSNotInitCompleteException;
 import com.aispeech.dui.dds.update.DDSUpdateListener;
 import com.aispeech.dui.dds.utils.PrefUtil;
+import com.liuerye.duidemo.DDSService;
+import com.liuerye.duidemo.R;
+import com.liuerye.duidemo.bean.MessageBean;
+import com.liuerye.duidemo.ui.adapter.DialogAdapter;
+import com.liuerye.duidemo.widget.InputField;
 
 import org.json.JSONArray;
 import org.json.JSONException;

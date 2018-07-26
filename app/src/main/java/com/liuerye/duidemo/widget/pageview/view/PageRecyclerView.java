@@ -1,4 +1,4 @@
-package demo.widget.pageview.view;
+package com.liuerye.duidemo.widget.pageview.view;
 
 import android.content.Context;
 import android.content.res.Configuration;
@@ -12,7 +12,8 @@ import android.util.Log;
 import android.view.View;
 import android.view.animation.Interpolator;
 
-import com.aispeech.dui.dds.demo.widget.pageview.adapter.OnPageDataListener;
+
+import com.liuerye.duidemo.widget.pageview.adapter.OnPageDataListener;
 
 import java.lang.reflect.Field;
 import java.lang.reflect.InvocationTargetException;

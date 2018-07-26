@@ -1,4 +1,4 @@
-package demo.widget.pageview.utils;
+package com.liuerye.duidemo.widget.pageview.utils;
 
 import android.support.annotation.IntRange;
 

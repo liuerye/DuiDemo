@@ -5,7 +5,7 @@
     android:layout_height="match_parent"
     >
 
-    <com.aispeech.dui.dds.demo.widget.pageview.view.PageRecyclerView
+    <com.liuerye.duidemo.widget.pageview.view.PageRecyclerView
         android:id="@+id/recyclerView"
         android:layout_width="wrap_content"
         android:layout_height="match_parent"

@@ -3,7 +3,7 @@
     android:layout_width="wrap_content"
     android:layout_height="wrap_content">
 
-    <com.aispeech.dui.dds.demo.widget.MyWebview
+    <com.liuerye.duidemo.widget.MyWebview
         android:id="@+id/mywebview"
         android:layout_width="match_parent"
         android:layout_height="250dp"

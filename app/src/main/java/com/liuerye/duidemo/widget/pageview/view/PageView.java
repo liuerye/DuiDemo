@@ -1,4 +1,4 @@
-package demo.widget.pageview.view;
+package com.liuerye.duidemo.widget.pageview.view;
 
 import android.content.Context;
 import android.content.res.TypedArray;
@@ -19,10 +19,10 @@ import android.view.View;
 import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 
-import com.aispeech.dui.dds.demo.R;
-import com.aispeech.dui.dds.demo.widget.pageview.adapter.BasePageAdapter;
-import com.aispeech.dui.dds.demo.widget.pageview.adapter.OnIndicatorListener;
-import com.aispeech.dui.dds.demo.widget.pageview.adapter.OnPageDataListener;
+import com.liuerye.duidemo.R;
+import com.liuerye.duidemo.widget.pageview.adapter.BasePageAdapter;
+import com.liuerye.duidemo.widget.pageview.adapter.OnIndicatorListener;
+import com.liuerye.duidemo.widget.pageview.adapter.OnPageDataListener;
 
 import java.lang.ref.WeakReference;
 import java.util.List;

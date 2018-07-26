@@ -1,4 +1,4 @@
-package demo.widget;
+package com.liuerye.duidemo.widget;
 
 import android.content.Context;
 import android.util.AttributeSet;
