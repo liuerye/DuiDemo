@@ -1,6 +1,7 @@
 package com.liuerye.duidemo.observer;
 
 import android.content.Context;
+import android.util.Log;
 
 import com.aispeech.ailog.AILog;
 import com.aispeech.dui.dds.DDS;
@@ -26,7 +27,7 @@ public class DuiCommandObserver implements CommandObserver {
     @Override
     public void onCall(String topic, String data) {
         AILog.i(TAG, "topic: " + topic + ", data: " + data);
-
+        Log.e("@@@",topic);
         switch (topic) {
             case "cmd.demo.start_asrengine":
                 startAsrEngine();

@@ -127,17 +127,17 @@ public class DDSService extends Service {
         DDSConfig config = new DDSConfig();
 
         // 基础配置项
-        config.addConfig(DDSConfig.K_PRODUCT_ID, "278570296"); // 产品ID
-        config.addConfig(DDSConfig.K_USER_ID, "aispeech");  // 用户ID
-        config.addConfig(DDSConfig.K_ALIAS_KEY, "prod");   // 产品的发布分支
+        config.addConfig(DDSConfig.K_PRODUCT_ID, "278573926"); // 产品ID
+        config.addConfig(DDSConfig.K_USER_ID, "刘毅");  // 用户ID
+        config.addConfig(DDSConfig.K_ALIAS_KEY, "test");   // 产品的发布分支
         config.addConfig(DDSConfig.K_AUTH_TYPE, AuthType.PROFILE); //授权方式, 支持思必驰账号授权和profile文件授权
-        config.addConfig(DDSConfig.K_API_KEY, "4c1bbb6cbd81b44e7ce29a0f5a7baa91");  // 产品授权秘钥，服务端生成，用于产品授权
+        config.addConfig(DDSConfig.K_API_KEY, "ab5439e581f5ab5439e581f55b5a88e2");  // 产品授权秘钥，服务端生成，用于产品授权
         //config.addConfig("MINIMUM_STORAGE", (long)  200 * 1024 * 1024); // SDK需要的最小存储空间的配置，对于/data分区较小的机器可以配置此项，同时需要把内核资源放在其他位置
 
         // 资源更新配置项
         // 参考可选内置资源包文档: https://www.dui.ai/docs/operation/#/ct_ziyuan
-        //config.addConfig(DDSConfig.K_DUICORE_ZIP, "duicore.zip"); // 预置在指定目录下的DUI内核资源包名, 避免在线下载内核消耗流量, 推荐使用
-        //config.addConfig(DDSConfig.K_CUSTOM_ZIP, "product.zip"); // 预置在指定目录下的DUI产品配置资源包名, 避免在线下载产品配置消耗流量, 推荐使用
+        config.addConfig(DDSConfig.K_DUICORE_ZIP, "duicore.zip"); // 预置在指定目录下的DUI内核资源包名, 避免在线下载内核消耗流量, 推荐使用
+        config.addConfig(DDSConfig.K_CUSTOM_ZIP, "product.zip"); // 预置在指定目录下的DUI产品配置资源包名, 避免在线下载产品配置消耗流量, 推荐使用
         config.addConfig(DDSConfig.K_USE_UPDATE_DUICORE, "false"); //设置为false可以关闭dui内核的热更新功能，可以配合内置dui内核资源使用
         config.addConfig(DDSConfig.K_USE_UPDATE_NOTIFICATION, "false"); // 是否使用内置的资源更新通知栏
 
