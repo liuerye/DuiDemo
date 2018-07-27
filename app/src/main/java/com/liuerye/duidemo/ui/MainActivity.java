@@ -19,6 +19,7 @@ import android.util.Log;
 import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.View;
+import android.widget.Toast;
 
 import com.aispeech.ailog.AILog;
 import com.aispeech.dui.BaseNode;
@@ -29,6 +30,10 @@ import com.aispeech.dui.dds.agent.MessageObserver;
 import com.aispeech.dui.dds.exceptions.DDSNotInitCompleteException;
 import com.aispeech.dui.dds.update.DDSUpdateListener;
 import com.aispeech.dui.dds.utils.PrefUtil;
+import com.csipsdk.sdk.Message;
+import com.csipsdk.sdk.RXCallService;
+import com.csipsdk.sdk.listener.RXCallLoginListener;
+import com.csipsdk.sdk.listener.RXCallReceiveMsgListener;
 import com.liuerye.duidemo.DDSService;
 import com.liuerye.duidemo.R;
 import com.liuerye.duidemo.bean.MessageBean;
@@ -123,6 +128,40 @@ public class MainActivity extends AppCompatActivity implements InputField.Listen
         mMessageObserver = new DuiMessageObserver();
 
         testNode.start();
+        new Handler().postDelayed(new Runnable() {
+            @Override
+            public void run() {
+                loginRX();
+            }
+        }, 5000);
+    }
+
+    private void loginRX() {
+        RXCallService.with().rxLogin("1009", "120.77.144.67", "6162016", new RXCallLoginListener() {
+            @Override
+            public void onSuccessful(Message message) {
+                Log.e("@@@", "onSuccessful");
+            }
+
+            @Override
+            public void onFailed(Message message) {
+                Log.e("@@@", "onFailed");
+            }
+
+            @Override
+            public void onLogining(Message message) {
+                Log.e("@@@", "onLogining");
+            }
+        });
+
+        RXCallService.with().addMsgReceiveListener(new RXCallReceiveMsgListener() {
+            @Override
+            public void onReceiveMessage(String s, String s1) {
+                if (s.equals("1006") && (s1.contains("是") || s1.contains("对") || s1.contains("开"))) {
+                    Toast.makeText(MainActivity.this, "业主已给你开门，请进", Toast.LENGTH_SHORT).show();
+                }
+            }
+        });
     }
 
 

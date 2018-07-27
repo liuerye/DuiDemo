@@ -6,8 +6,16 @@ import android.content.Context;
 import android.content.pm.PackageInfo;
 import android.content.pm.PackageManager;
 import android.os.Bundle;
+import android.widget.Toast;
 
+import com.csipsdk.sdk.CallSession;
+import com.csipsdk.sdk.Message;
+import com.csipsdk.sdk.RXCallService;
+import com.csipsdk.sdk.listener.RXCallServiceListener;
+import com.csipsdk.utils.Log;
 import com.facebook.drawee.backends.pipeline.Fresco;
+
+import org.androidannotations.annotations.App;
 
 public class DuiApplication extends Application implements Application.ActivityLifecycleCallbacks {
 
@@ -18,7 +26,7 @@ public class DuiApplication extends Application implements Application.ActivityL
         super.onCreate();
         mContext = this;
         Fresco.initialize(this);
-
+        initRX();
     }
 
     public String getVersion() {
@@ -73,4 +81,46 @@ public class DuiApplication extends Application implements Application.ActivityL
     public void onActivityDestroyed(Activity activity) {
 
     }
+
+    private void initRX() {
+        RXCallService.with().initRXCall(this, true, new RXCallServiceListener() {
+            @Override
+            public void onConnectFailed(Message msg) {
+                Log.e("@@@", "onConnectFailed " + msg.getMsg() + " code " + msg.getCode());
+            }
+
+            @Override
+            public void onConnectSuccess() {
+                Log.e("@@@", "onConnectSuccess");
+            }
+
+            @Override
+            public void onConnecting() {
+                Log.e("@@@", "onConnecting");
+            }
+
+            @Override
+            public void onIncomingCall(CallSession callSession) {
+            }
+
+            @Override
+            public void onHangUp(CallSession callSession) {
+            }
+
+            @Override
+            public void onDialFailed(Message msg) {
+                Toast.makeText(DuiApplication.this, msg.getMsg(), Toast.LENGTH_SHORT).show();
+            }
+
+            @Override
+            public void onAnswer(CallSession callSession) {
+            }
+
+            @Override
+            public void onAlerting(CallSession callSession) {
+                Log.e("App", "onAlerting");
+            }
+        });
+    }
+
 }

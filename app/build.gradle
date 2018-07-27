@@ -11,7 +11,7 @@ android {
         }
     }
     compileSdkVersion 26
-    buildToolsVersion '26.0.1'
+    buildToolsVersion '27.0.3'
     defaultConfig {
         minSdkVersion 15
         targetSdkVersion 22
@@ -19,7 +19,7 @@ android {
         versionName "1.0"
         ndk {
             // 设置支持的SO库架构
-            abiFilters 'armeabi', 'armeabi-v7a', 'arm64-v8a'//, 'x86', , 'x86_64'
+            abiFilters 'armeabi', 'armeabi-v7a'//, 'arm64-v8a'//, 'x86', , 'x86_64'
         }
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
     }
@@ -48,6 +48,7 @@ dependencies {
         exclude group: 'com.android.support', module: 'support-annotations'
     })
     compile(name: 'lib-dds-1.0.11.1-release', ext: 'aar')
+    compile(name: 'siplib-release', ext: 'aar')
     compile 'com.android.support:appcompat-v7:26.1.0'
     compile 'com.android.support:recyclerview-v7:26.1.0'
     compile 'com.android.support.constraint:constraint-layout:1.0.0-alpha7'
